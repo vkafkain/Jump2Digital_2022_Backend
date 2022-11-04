@@ -1,27 +1,19 @@
-const { error } = require("console");
 const express = require("express");
 const app = express();
 const PORT = 3000;
-const data = require("./database/companies.json");
-const connectDB = require("./database/connectionDB");
-
+const {connectDB, createDB} = require("./database/connectionDB");
+const companiesRoutes = require("./routes/companiesRoutes");
 
 //create database and connect
+createDB();
 connectDB();
-
-//load companies.json into database
-
-
 
 //middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
-// app.use(routes);
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+app.use("/companies", companiesRoutes);
 
 //server
 app.listen(PORT, () => {

@@ -1,20 +1,26 @@
 const mongoose = require("mongoose");
-const { MongoClient } = require("mongodb").MongoClient;
-const url = "mongodb://localhost:27017/"
+let data = require("./companies.json");
+const Company = require("../models/Company");
 
-const connectDB = async () => {
+const createDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost/Company_analytics");
-    console.log("connected to database");
+    await Company.deleteMany();
+    data.forEach(async (companies) => {
+      await Company.create(companies);
+    });
+    console.log("database created");
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 };
 
-MongoClient.connect(url, function(err, db){
-  if(err) throw err;
-  const dbo = db.db("Company_analytics")
-  
-})
+const connectDB = async () => {
+  try {
+    await mongoose.connect("mongodb://localhost/companies");
+    console.log("connected to database");
+  } catch (error) {
+    throw error;
+    }
+};
 
-module.exports = connectDB;
+module.exports = { connectDB, createDB };
