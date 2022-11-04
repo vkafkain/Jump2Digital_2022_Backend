@@ -16,16 +16,16 @@ Task 4 => "Crear un endpoint que devuelva los siguientes datos: Número de empre
 
 ## Instalación
 
-Para que el projecto funcione tenemos que instalar previamente: 
+Para que el proyecto funcione tenemos que instalar previamente: 
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Node.js y npm](https://nodejs.org/es/)
 - [Postman](https://www.postman.com/)
 
-Podemos clonar el projecto del siguiente enlace:
+Podemos clonar el proyecto del siguiente enlace:
 ```
     npm clone https://github.com/vkafkain/Jump2Digital_2022_Backend.git
 ```
-Una vez clonado el projecto debemos ejecutar el siguiente comando por terminal:
+Una vez clonado el proyecto debemos ejecutar el siguiente comando por terminal:
 ```
     npm install
 ```
@@ -38,7 +38,7 @@ Una vez hemos instalado todo tenemos que ejecutar el comando:
 ```
 Esto nos inicializa el servidor y la base de datos.
 
-## Arquitectura del projecto
+## Arquitectura del proyecto
 
 Estructura:
 
@@ -46,17 +46,17 @@ Estructura:
 
 ## Rutas
 
-_Obtener compañias ordenadas por tamaño - GET_
+_Obtener compañías ordenadas por tamaño - GET_
 ```
 http://localhost:3000/companies/size
 ```
 
-_Obtener compañias ordenadas por fecha de creacion - GET_
+_Obtener compañías ordenadas por fecha de creación - GET_
 ```
 http://localhost:3000/companies/date
 ```
 
-_Obtener numero de empresas de cada industria, rango de tamaños y año de creación - GET_
+_Obtener número de empresas de cada industria, rango de tamaños y año de creación - GET_
 ```
 http://localhost:3000/companies/count
 ```
