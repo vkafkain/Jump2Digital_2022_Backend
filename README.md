@@ -44,13 +44,35 @@ Estructura:
 
 ![Demo](https://github.com/vkafkain/Jump2Digital_2022_Backend/blob/main/docs/01.png)
 
+## Rutas
+
+_Obtener compañias ordenadas por tamaño - GET_
+```
+http://localhost:3000/companies/size
+```
+
+_Obtener compañias ordenadas por fecha de creacion - GET_
+```
+http://localhost:3000/companies/date
+```
+
+_Obtener numero de empresas de cada industria, rango de tamaños y año de creación - GET_
+```
+http://localhost:3000/companies/count
+```
+
 ## Programas utilizados
 
+* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programación utilizado.
+* [Node.js](https://nodejs.org/es/docs/) - Entorno para ejecutar JavaScript del lado del servidor.
+* [Express](https://www.npmjs.com/package/express) - Framework de node.js.
+* [NPM](https://www.npmjs.com/) - Administrador de dependencias.
+* [Mongoose](https://mongoosejs.com/) - Dependencia que nos ayuda a gestionar datos con MongoDB.
 
 
 ## Autor
 
-> hello@nuwe.io || Edgar Gago Carrillo
+* Github [Víctor López](https://github.com/vkafkain)  |  Email vlopezmoles@gmail.com
 
 ## License
 
