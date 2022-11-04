@@ -34,25 +34,20 @@ Una vez clonado el projecto debemos ejecutar el siguiente comando por terminal:
 
 Una vez hemos instalado todo tenemos que ejecutar el comando: 
 ```
-    npm install
+    npm run start
 ```
+Esto nos inicializa el servidor y la base de datos.
+
+## Arquitectura del projecto
+
+Estructura:
+![Demo](https://github.com//vkafkain/Jump2Digital_2022_Backend/blob/main/docs/01.png)
+
+## Programas utilizados
 
 
-## See more
 
-Algunos links the licéncias Open source para copiar y pegar:
-
-- [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
-- [BSD 3-Clause "New" or "Revised" license](https://opensource.org/licenses/BSD-3-Clause)
-- [BSD 2-Clause "Simplified" or "FreeBSD" license](https://opensource.org/licenses/BSD-2-Clause)
-- [GNU General Public License (GPL)](https://opensource.org/licenses/gpl-license)
-- [GNU Library or "Lesser" General Public License (LGPL)](https://opensource.org/licenses/lgpl-license)
-- [MIT](https://opensource.org/licenses/MIT)
-- [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)
-- [Common Development and Distribution License](https://opensource.org/licenses/CDDL-1.0)
-- [Eclipse Public License version 2.0](https://opensource.org/licenses/EPL-2.0)
-
-## Contact info
+## Autor
 
 > hello@nuwe.io || Edgar Gago Carrillo
 
