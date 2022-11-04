@@ -41,7 +41,7 @@ Esto nos inicializa el servidor y la base de datos.
 ## Arquitectura del projecto
 
 Estructura:
-![Demo](https://github.com//vkafkain/Jump2Digital_2022_Backend/blob/main/docs/01.png)
+![Demo](https://github.com/vkafkain/Jump2Digital_2022_Backend/blob/main/docs/01.png)
 
 ## Programas utilizados
 
