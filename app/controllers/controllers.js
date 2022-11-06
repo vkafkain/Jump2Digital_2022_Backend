@@ -24,16 +24,17 @@ const controllers = {
     try {
       const companiesIndustry = await Company.aggregate([
         { $group: { _id: "$industry", total: { $sum: 1 } } },
+        { $project: { industry: "$_id", total: 1, _id: 0 } },
       ]).sort({ total: 1 });
       const companiesSizes = await Company.aggregate([
         { $group: { _id: "$size", total: { $sum: 1 } } },
+        { $project: { size: "$_id", total: 1, _id: 0 } },
       ]).sort({ total: 1 });
       const companiesYear = await Company.aggregate([
         { $group: { _id: "$founded", total: { $sum: 1 } } },
+        { $project: { founded: "$_id", total: 1, _id: 0 } },
       ]).sort({ total: 1 });
-      res
-        .status(200)
-        .send({ companiesIndustry, companiesSizes, companiesYear });
+      res.status(200).send({ companiesIndustry, companiesSizes, companiesYear });
     } catch (error) {
       res.status(400).send(error);
     }
