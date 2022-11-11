@@ -60,6 +60,10 @@ _Obtener número de empresas de cada industria, rango de tamaños y año de crea
 ```
 http://localhost:3000/companies/count
 ```
+## POSTMAN
+
+En la direccion /POSTMAN/Jump2Digital.postman_collection.json
+
 
 ## Programas utilizados
 

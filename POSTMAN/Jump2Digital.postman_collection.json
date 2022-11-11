@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "cab1b9e0-37b5-4f28-8f54-6875834dccb5",
+		"name": "Jump2Digital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23319367"
+	},
+	"item": [
+		{
+			"name": "Crear un endpoint que devuelva las compañías ordenadas por fecha de creación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/companies/date",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies",
+						"date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un endpoint que devuelva los siguientes datos: Número de empresas que hay en cada industria, Número de empresas que hay por cada rango de tamaños, Número de empresas que hay en cada año de creación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/companies/count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un endpoint que devuelva las compañías ordenadas por tamaño",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/companies/size",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies",
+						"size"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
